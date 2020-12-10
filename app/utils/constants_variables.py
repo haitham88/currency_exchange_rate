@@ -1,0 +1,8 @@
+
+
+# Successful - 2xx
+HTTP_200_OK = 200
+HTTP_201_CREATED = 201
+
+# Client Error - 4xx
+HTTP_400_BAD_REQUEST = 400
