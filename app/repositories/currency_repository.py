@@ -27,4 +27,5 @@ class CurrencyRepository(BaseRepository):
             self.session.add(exchange_rate)
             self.session.commit()
         except Exception as e:
-            print(e)
+            exception = self.exceptions.get_exception("creating_new_row", e)
+            print(exception)
