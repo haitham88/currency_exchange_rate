@@ -9,9 +9,9 @@
 - Docker Compose
 ### Requirements
   - **Docker** 
-    if you don't know how to install Docker please go to **(https://docs.docker.com/engine/install/ubuntu/)**
+    - if you don't know how to install Docker please go to **(https://docs.docker.com/engine/install/ubuntu/)**
   - **Docker Compose**
-    *if you don't know how to install Docker Compose please go to **(https://docs.docker.com/compose/install/)**
+    - *if you don't know how to install Docker Compose please go to **(https://docs.docker.com/compose/install/)**
   
 ### Starting services
 
@@ -41,7 +41,7 @@ Then run docker command again.
 ```
 # Documentation
 -------------------------------------------------------------------------------------------
-This app has a one endpoint /rate ,and It takes three query parameters:
+This app has one endpoint /rate ,and It takes three query parameters:
 - from_currency
 - to_currency
 - date
@@ -55,11 +55,11 @@ and respond with exchange rate for those currencies at specific date.
 
 ### Testing:
 - **To check database after you call the endpoint, you can run the following commands:**
- 1: sudo docker-compose exec db bash
-2: mysql -u root -p
-3: it required password : enter password 
-4: use flextock
-5: select * from exchange_currency_rates;
+ 1. sudo docker-compose exec db bash
+2. mysql -u root -p
+3. it required password : enter password 
+4. use flextock
+5. select * from exchange_currency_rates;
 - **To check if the endpoint got the rate from the external api or from database you can run this command:**
 ```
     $ sudo docker-compose logs
@@ -73,3 +73,4 @@ and respond with exchange rate for those currencies at specific date.
     GET FROM DATABASE
     /////////////////////////////////////
 ```
+        
